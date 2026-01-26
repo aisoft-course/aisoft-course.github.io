@@ -2,7 +2,7 @@
 
 | 周 | 内容 | 资料 |
 |---|---|---|
-| 1 | 使用Python编写神经网络 | |
+| 1 | 使用Python编写神经网络 | [Week 1 Slides](slides/week1.html) |
 | 2 | Python程序的解析和运行 | |
 | 3 | Python与Native Code交互 | |
 | 4 | Python多线程 | |
