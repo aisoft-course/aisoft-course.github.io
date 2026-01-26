@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 - 使用Python编写神经网络</title>
+    <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+        .reveal ul {
+            display: block;
+        }
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal .slides section.center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section class="center">
+                <h1>AI软件课程</h1>
+                <h2>Week 1: 使用Python编写神经网络</h2>
+                <p>Writing Neural Networks with Python</p>
+                <br>
+                <p><small>AI Software Course</small></p>
+            </section>
+
+            <!-- Course Agenda -->
+            <section>
+                <h2>课程大纲 (Course Agenda)</h2>
+                <ul>
+                    <li>第1周: 使用Python编写神经网络</li>
+                    <li>第2周: Python程序的解析和运行</li>
+                    <li>第3周: Python与Native Code交互</li>
+                    <li>第4周: Python多线程</li>
+                    <li>第5周: 课堂反转</li>
+                    <li>第6周: 使用PyTorch编写和训练神经网络模型</li>
+                    <li>第7周: GPU编程</li>
+                    <li>第8周: 算子开发</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>课程大纲 (续)</h2>
+                <ul>
+                    <li>第9周: 算子优化</li>
+                    <li>第10周: 课堂反转</li>
+                    <li>第11周: 使用PyTorch编写大模型</li>
+                    <li>第12周: 大模型训练</li>
+                    <li>第13周: 大模型推理系统与性能优化</li>
+                    <li>第14周: 大模型应用</li>
+                    <li>第15周: 课堂反转</li>
+                    <li>第16周: 期末考试</li>
+                </ul>
+            </section>
+
+            <!-- Course Objectives -->
+            <section>
+                <h2>课程目标 (Course Objectives)</h2>
+                <ul>
+                    <li>理解AI软件开发的核心技术栈</li>
+                    <li>掌握从基础神经网络到大模型的实现</li>
+                    <li>学习高性能计算和优化技术</li>
+                    <li>培养实际AI项目开发能力</li>
+                    <li>理解AI系统的架构和工程实践</li>
+                </ul>
+            </section>
+
+            <!-- Week 1 Objectives -->
+            <section>
+                <h2>本周学习目标 (Week 1 Objectives)</h2>
+                <ul>
+                    <li>理解神经网络的基本原理</li>
+                    <li>掌握Python基础编程技能</li>
+                    <li>学习使用NumPy进行数值计算</li>
+                    <li>实现简单的神经网络层</li>
+                    <li>理解前向传播和反向传播</li>
+                    <li>构建完整的神经网络模型</li>
+                </ul>
+            </section>
+
+            <!-- Introduction: What is a Neural Network -->
+            <section>
+                <h2>什么是神经网络？</h2>
+                <p>神经网络是一种受生物神经系统启发的计算模型：</p>
+                <ul>
+                    <li><strong>神经元 (Neurons)</strong>: 基本计算单元</li>
+                    <li><strong>层 (Layers)</strong>: 神经元的组织结构</li>
+                    <li><strong>权重 (Weights)</strong>: 连接的强度</li>
+                    <li><strong>激活函数 (Activation Functions)</strong>: 非线性变换</li>
+                </ul>
+            </section>
+
+            <!-- Python for Neural Networks -->
+            <section>
+                <h2>为什么使用Python？</h2>
+                <ul>
+                    <li><strong>简洁易读</strong>: 语法清晰，适合快速原型开发</li>
+                    <li><strong>丰富的库</strong>: NumPy, SciPy, Matplotlib等</li>
+                    <li><strong>社区支持</strong>: 大量的AI/ML资源和教程</li>
+                    <li><strong>性能优化</strong>: 可以调用C/C++库提升性能</li>
+                    <li><strong>工业标准</strong>: TensorFlow, PyTorch等主流框架</li>
+                </ul>
+            </section>
+
+            <!-- Basic Building Blocks -->
+            <section>
+                <h2>神经网络的基本组件</h2>
+                <ol>
+                    <li><strong>输入层 (Input Layer)</strong>: 接收原始数据</li>
+                    <li><strong>隐藏层 (Hidden Layers)</strong>: 特征提取和变换</li>
+                    <li><strong>输出层 (Output Layer)</strong>: 产生预测结果</li>
+                    <li><strong>损失函数 (Loss Function)</strong>: 衡量预测误差</li>
+                    <li><strong>优化器 (Optimizer)</strong>: 更新网络参数</li>
+                </ol>
+            </section>
+
+            <!-- Forward Propagation -->
+            <section>
+                <h2>前向传播 (Forward Propagation)</h2>
+                <p>数据从输入到输出的流动过程：</p>
+                <pre><code class="python" data-trim>
+# 简单的前向传播示例
+def forward(X, W, b):
+    """
+    X: 输入数据
+    W: 权重矩阵
+    b: 偏置向量
+    """
+    Z = np.dot(X, W) + b  # 线性变换
+    A = sigmoid(Z)         # 激活函数
+    return A
+                </code></pre>
+            </section>
+
+            <!-- Backward Propagation -->
+            <section>
+                <h2>反向传播 (Backward Propagation)</h2>
+                <p>计算梯度并更新参数：</p>
+                <ul>
+                    <li>使用链式法则计算梯度</li>
+                    <li>从输出层向输入层传播误差</li>
+                    <li>更新权重和偏置</li>
+                </ul>
+                <pre><code class="python" data-trim>
+# 梯度下降更新
+W = W - learning_rate * dW
+b = b - learning_rate * db
+                </code></pre>
+            </section>
+
+            <!-- Hands-on Example -->
+            <section>
+                <h2>实践示例：构建简单神经网络</h2>
+                <p>本周我们将实现：</p>
+                <ul>
+                    <li>使用NumPy构建全连接层</li>
+                    <li>实现常用激活函数 (Sigmoid, ReLU, Tanh)</li>
+                    <li>编写前向和反向传播算法</li>
+                    <li>训练一个简单的分类模型</li>
+                    <li>可视化训练过程和结果</li>
+                </ul>
+            </section>
+
+            <!-- Key Concepts -->
+            <section>
+                <h2>核心概念总结</h2>
+                <ul>
+                    <li><strong>张量运算</strong>: 矩阵乘法、广播机制</li>
+                    <li><strong>梯度计算</strong>: 自动微分、链式法则</li>
+                    <li><strong>参数初始化</strong>: Xavier、He初始化</li>
+                    <li><strong>正则化</strong>: L1/L2、Dropout</li>
+                    <li><strong>批量训练</strong>: Mini-batch、Batch Normalization</li>
+                </ul>
+            </section>
+
+            <!-- Next Steps -->
+            <section>
+                <h2>下周预告</h2>
+                <p><strong>Week 2: Python程序的解析和运行</strong></p>
+                <ul>
+                    <li>Python解释器的工作原理</li>
+                    <li>字节码和虚拟机</li>
+                    <li>内存管理和垃圾回收</li>
+                    <li>性能分析和优化</li>
+                </ul>
+            </section>
+
+            <!-- Q&A -->
+            <section class="center">
+                <h1>Q&A</h1>
+                <h2>问题与讨论</h2>
+                <p>谢谢！</p>
+                <p><small>Thank you!</small></p>
+            </section>
+        </div>
+    </div>
+
+    <script src="reveal.js/dist/reveal.js"></script>
+    <script src="reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            plugins: [ RevealHighlight ]
+        });
+    </script>
+</body>
+</html>
