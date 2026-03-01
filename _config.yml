@@ -1,0 +1,19 @@
+title: "AI软件基础"
+name: ""
+description: "复旦大学人工智能的软件基础课程主页（2026年春）"
+subtitle: ""
+
+show_title: false
+show_header: false
+header: ""
+
+plugins:
+  - jekyll-seo-tag
+
+seo:
+  title: ""
+  name: ""
+  description: ""
+
+github:
+  is_project_page: false
