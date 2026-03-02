@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#1a1a2e"/>
+  <rect x="60" y="60" width="1800" height="960" rx="16" fill="#16213e" stroke="#0066cc" stroke-width="4"/>
+  <text x="960" y="460" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="80" fill="#fff" text-anchor="middle" font-weight="bold">第 3 页 — 占位幻灯片</text>
+  <text x="960" y="580" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="48" fill="#aaa" text-anchor="middle">请将此文件替换为真实课件图片</text>
+  <text x="960" y="680" font-family="monospace" font-size="36" fill="#555" text-anchor="middle">slides/L1/assets/slide-003.svg</text>
+</svg>
