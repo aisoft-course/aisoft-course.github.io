@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {%- seo -%}
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <title>{{ page.title | default: site.title }}</title>
+    <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", sans-serif; font-size: 16px; line-height: 1.7; color: #222; margin: 0; padding: 1rem; }
+      .wrapper { max-width: 800px; margin: 0 auto; }
+      a { color: #0066cc; }
+      code, pre { font-family: monospace; background: #f4f4f4; border-radius: 4px; }
+      code { padding: 0.1em 0.3em; }
+      pre { padding: 0.8em 1em; overflow-x: auto; }
+      pre code { background: none; padding: 0; }
+      table { border-collapse: collapse; width: 100%; }
+      th, td { border: 1px solid #ccc; padding: 0.4em 0.7em; }
+      th { background: #f0f0f0; }
+    </style>
   </head>
   <body>
-    <main class="page-content" aria-label="Content">
+    <main aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
