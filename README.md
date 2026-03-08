@@ -6,7 +6,7 @@
 | 周 | 内容 | 资料 | 代码 |
 |---|---|---|---|
 | 1 | 使用Python编写神经网络 | [课件](notes/L1-使用python编写神经网络.pdf) | [factorial-relu](code/l1-factorial-relu.py), [factorial-sigmoid](code/l1-factorial-sigmoid.py) |
-| 2 | Python程序的解析和运行 | | 
+| 2 | Python程序的解析和运行 | [课件](notes/L2-Python程序的解析和运行.pdf) | [relu](code/l2-relu.py), [pytool](code/l2-pytool.py) |
 | 3 | Python与Native Code交互 | | | 
 | 4 | Python多线程 | | | 
 | 5 | 课堂反转 | |
