@@ -3,10 +3,12 @@
 
 @import "minima";
 
-.wrapper {
-  max-width: 1100px;
+.wrapper,
+.page-content {
+  max-width: 1200px;
+  margin: auto;
 }
 
-.page-content {
-  max-width: 1100px;
+.post-content {
+  max-width: none;
 }
