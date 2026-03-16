@@ -3,12 +3,20 @@
 
 @import "minima";
 
-.wrapper,
-.page-content {
-  max-width: 1200px;
-  margin: auto;
+.wrapper,.page-content{
+  max-width:1200px;
+  margin:auto;
 }
 
-.post-content {
-  max-width: none;
+.post-content{
+  max-width:none;
+}
+
+table{
+  width:100%;
+  table-layout:fixed;
+}
+
+table th,table td{
+  word-wrap:break-word;
 }
