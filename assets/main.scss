@@ -12,11 +12,12 @@
   max-width:none;
 }
 
-table{
-  width:100%;
-  table-layout:fixed;
+table {
+  width: 100%;
+  table-layout: auto;
 }
 
-table th,table td{
-  word-wrap:break-word;
+table th,
+table td {
+  white-space: nowrap;
 }
