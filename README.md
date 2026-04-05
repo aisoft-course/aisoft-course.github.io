@@ -10,7 +10,7 @@
 | 3 | Python与Native Code交互 | [课件](notes/L3-Python与native交互.pdf) | [bench_dot(py)](code/l3-1-bench_dot.py), [bench_dot(c)](code/l3-1-bench_dot.c), [bench_numba](code/l3-2-bench_numba.py), [decorator(py)](code/l3-3-deco.py), [decorator(c)](code/l3-3-vec.c) | 
 | 4 | Python多线程 | [课件](notes/L4-Python多线程.pdf) | [datarace.py](code/l4-datarace.py), [bench-matmul.py](code/l4-bench-matmul.py), [matmul.c](code/l4-matmul.c) | 
 | 5 | 课堂反转 | |
-| 6 | 使用PyTorch编写和训练神经网络模型 | | | 
+| 6 | 使用PyTorch编写和训练神经网络模型 | [课件](notes/L5-PyTorch.pdf) | [lenet5](code/l5-lenet5.py), [rnn](code/l5-rnn.py) | 
 | 7 | GPU编程 | | | 
 | 8 | 算子开发 | | | 
 | 9 | 算子优化 | | | 
