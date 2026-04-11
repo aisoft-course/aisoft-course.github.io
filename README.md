@@ -11,7 +11,7 @@
 | 4 | Python多线程 | [课件](notes/L4-Python多线程.pdf) | [datarace.py](code/l4-datarace.py), [bench-matmul.py](code/l4-bench-matmul.py), [matmul.c](code/l4-matmul.c) | 
 | 5 | 课堂反转 | |
 | 6 | 使用PyTorch编写和训练神经网络模型 | [课件](notes/L5-PyTorch.pdf) | [lenet5](code/l5-lenet5.py), [rnn](code/l5-rnn.py) | 
-| 7 | GPU编程 | | | 
+| 7 | GPU编程 | [课件](notes/L6-GPU编程.pdf) | [ele_mul](code/l6-ele_mul.cu), [bench_mat](code/l6-bench_mat.cu.cu) | 
 | 8 | 算子开发 | | | 
 | 9 | 算子优化 | | | 
 | 10 | 课堂反转 | |
