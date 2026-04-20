@@ -12,7 +12,7 @@
 | 5 | 课堂反转 | |
 | 6 | 使用PyTorch编写和训练神经网络模型 | [课件](notes/L5-PyTorch.pdf) | [lenet5](code/l5-lenet5.py), [rnn](code/l5-rnn.py) | 
 | 7 | GPU编程 | [课件](notes/L6-GPU编程.pdf) | [ele_mul](code/l6-ele_mul.cu), [bench_mat](code/l6-bench_mat.cu) | 
-| 8 | 算子开发 | | | 
+| 8 | 算子开发 | [课件](notes/L7-算子开发.pdf) | [vecmul](code/l7-vecmul.py), [autotune](code/l7-autotune.py), [lenet5](code/l7-lenet5.py) | 
 | 9 | 算子优化 | | | 
 | 10 | 课堂反转 | |
 | 11 | 使用PyTorch编写大模型 | | | 
