@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import time
 
-# ====== 你的实现 ======
+# ====== MLP分布实现 ======
 class MLP_Manual(nn.Module):
     def __init__(self, feature=1, hidden=64):
         super().__init__()
