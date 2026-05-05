@@ -13,7 +13,7 @@
 | 6 | 使用PyTorch编写和训练神经网络模型 | [课件](notes/L5-PyTorch.pdf) | [lenet5](code/l5-lenet5.py), [rnn](code/l5-rnn.py) | 
 | 7 | GPU编程 | [课件](notes/L6-GPU编程.pdf) | [ele_mul](code/l6-ele_mul.cu), [bench_mat](code/l6-bench_mat.cu) | 
 | 8 | 算子开发 | [课件](notes/L7-算子开发.pdf) | [vecmul](code/l7-vecmul.py), [autotune](code/l7-autotune.py), [lenet5](code/l7-lenet5.py) | 
-| 9 | 算子融合 | [课件](notes/L8-算子融合.pdf) | [mlp](code/l8-mlp.py), [benchmark](code/l8-benchmark.py) | 
+| 9 | 算子融合 | [课件](notes/L8-算子融合.pdf) | [mlp](code/l8-mlp.py), [linear](code/l8-linear.py), [benchmark](code/l8-benchmark.py) | 
 | 10 | 课程小结与研讨 | |
 | 11 | 使用PyTorch编写大模型 | | | 
 | 12 | 大模型训练 | |
