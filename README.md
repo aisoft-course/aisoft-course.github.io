@@ -15,7 +15,7 @@
 | 8 | 算子开发 | [课件](notes/L7-算子开发.pdf) | [vecmul](code/l7-vecmul.py), [autotune](code/l7-autotune.py), [lenet5](code/l7-lenet5.py) | 
 | 9 | 算子融合 | [课件](notes/L8-算子融合.pdf) | [mlp](code/l8-mlp.py), [linear](code/l8-linear.py), [benchmark](code/l8-benchmark.py) | 
 | 10 | 课程小结与研讨 | |
-| 11 | 大语言模型 | [notes/L9-大语言模型.pdf] | [train](code/l9-train.py), [test](code/l9-test.py) | 
+| 11 | 大语言模型 | [课件](notes/L9-大语言模型.pdf) | [train](code/l9-train.py), [test](code/l9-test.py) | 
 | 12 | 大模型训练 | |
 | 13 | 大模型推理系统与性能优化 | | | 
 | 14 | 大模型应用 | | | 
