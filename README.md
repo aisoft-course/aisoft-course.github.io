@@ -16,7 +16,7 @@
 | 9 | 算子融合 | [课件](notes/L8-算子融合.pdf) | [mlp](code/l8-mlp.py), [linear](code/l8-linear.py), [benchmark](code/l8-benchmark.py) | 
 | 10 | 课程小结与研讨 | |
 | 11 | 大语言模型 | [课件](notes/L9-大语言模型.pdf) | [train](code/l9-train.py), [test](code/l9-test.py) | 
-| 12 | 大模型训练 | |
+| 12 | 大模型训练 | [课件](notes/L10-大语言训练.pdf) | [lenet5_ddp](code/l10-lenet5_ddp.py), [llama_lora](code/l10-llama_lora.py) | 
 | 13 | 大模型推理系统与性能优化 | | | 
 | 14 | 大模型应用 | | | 
 | 15 | 课程小结与研讨 | | | 
