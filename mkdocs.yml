@@ -51,11 +51,5 @@ plugins:
       minify_html: true
   - open-in-new-tab
 
-extra_css:
-  - extra.css
-
-extra_javascript:
-  - extra.js
-
 nav:
   - 课程主页: index.md
