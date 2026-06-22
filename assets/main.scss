@@ -23,3 +23,27 @@ table th,
 table td {
   white-space: nowrap;
 }
+
+.github-stars-container {
+  margin-bottom: 20px;
+}
+
+.github-stars-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #24292f;
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.github-stars-link:hover {
+  background: #eaeef2;
+  text-decoration: none;
+  color: #24292f;
+}
