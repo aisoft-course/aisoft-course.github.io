@@ -1,0 +1,12 @@
+[project]
+name = "aisoft-course-github-io"
+version = "0.1.0"
+description = "AI软件基础课程主页"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-git-revision-date-plugin>=0.3.2",
+    "mkdocs-material>=9.7.4",
+    "mkdocs-minify-plugin>=0.8.0",
+    "mkdocs-open-in-new-tab>=1.0.8",
+]

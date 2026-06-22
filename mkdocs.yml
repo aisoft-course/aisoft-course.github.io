@@ -1,0 +1,61 @@
+site_name: AI软件基础（复旦大学2026年春季学期）
+site_url: https://aisoft-course.github.io/
+
+theme:
+  name: material
+  language: zh
+  icon:
+    repo: fontawesome/brands/github
+
+  features:
+    - header.autohide
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.annotate
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  font:
+    text: Roboto Slab
+    code: Roboto Mono
+
+repo_url: https://github.com/aisoft-course/aisoft-course.github.io
+repo_name: aisoft-course/aisoft-course.github.io
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - footnotes
+  - tables
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - git-revision-date
+  - minify:
+      minify_html: true
+  - open-in-new-tab
+
+extra_css:
+  - extra.css
+
+extra_javascript:
+  - extra.js
+
+nav:
+  - 课程主页: index.md
